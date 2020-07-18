@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import contact from "./pages/contact";
+import { onGetContactAction } from "./redux/action";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    dispatch(onGetContactAction());
+  }, []);
+
+  if (loading) {
+    return (
+      <div style={{ textAlign: "center" }}>
+        <h1>loading</h1>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Switch>
+          <Route path={"/"} exact component={contact} />
+        </Switch>
+      </div>
+    );
+  }
+}
 export default App;

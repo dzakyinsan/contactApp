@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+
+/* ============================== Fonts ======================== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.header-container {
+  height: 65px;
+  display: flex;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 10px;
+}
+.header-1 {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #686c71;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.main-searchBar {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.searchbar-1 {
+  height: 46px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: #f1f3f4;
+}
+.contact-main-container {
+  /* border: 2px solid black; */
+  margin-top: 30px;
+  /* margin-left: 310px; */
+  width: 1800px;
+  display: flex;
+}
+.containerA {
+  /* border: 2px solid black; */
+  width: 330px;
+}
+.addBtn {
+  /* border: 1px solid black; */
+  display: flex;
+  border-radius: 30px;
+  /* text-align: center; */
+  width: 190px;
+  padding: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background-color: #f77d03;
+  color: whitesmoke;
+  transition: 300ms;
+}
+.addBtn:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #e67505;
+  cursor: pointer;
+  color: wheat;
+}
+.containerB-1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #66696e;
+  /* margin-bottom: 20px; */
+  padding: 10px;
+}
+th {
+  /* border: 1px solid black; */
+  text-align: left;
+  width: 300px;
+}
+.containerB-2 {
+  /* border: 2px solid black; */
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  padding: 15px;
+  color: #606060;
+  font-size: 14px;
+}
+td {
+  /* border: 1px solid black; */
+  width: 300px;
+}
+.containerB-2:hover {
+  background-color: #f1f3f4;
+  cursor: pointer;
+}
+.icon-edit-delete {
+  color: white;
+  margin-left: 30px;
+}
+/* .icon-edit-delete:hover {
+  color: yellow;
+} */
+.containerB-2:hover .icon-edit-delete {
+  color: #606060;
+}
+.modaladd {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
