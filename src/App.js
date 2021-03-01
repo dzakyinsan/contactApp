@@ -14,6 +14,7 @@ function App() {
       setLoading(false);
     }, 1500);
     dispatch(onGetContactAction());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (loading) {

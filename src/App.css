@@ -43,101 +43,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 
-.header-container {
-  /* height: 65px; */
-  display: flex;
-  font-family: "Source Sans Pro", sans-serif;
-  padding-top: 10px;
-  /* position: fixed; */
-  /* background-color: #f77d03; */
-}
-.header-1 {
+.page-content {
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  font-size: 25px;
-  color: #686c71;
-  margin-top: 10px;
-  margin-left: 10px;
+  background-image: url("https://www.kibrispdr.org/data/paper-background-hd-7.jpg");
 }
-.main-searchBar {
+.page-2-content {
+  min-height: 100vh;
+  width: 60%;
+  padding-top: 5rem;
+  margin: auto;
+}
+.create-btn {
   display: flex;
-  margin-top: 15px;
-  margin-left: 40px;
+  align-items: center;
 }
-.searchbar-1 {
-  height: 46px;
-  width: 600px;
-  border-radius: 5px;
-  background-color: #f1f3f4;
+.create-btn Button {
+  background-color: #f77d03 !important;
 }
-.contact-main-container {
-  /* border: 2px solid black; */
-  margin-top: 30px;
-  /* margin-left: 310px; */
-  /* width: 1800px; */
-  width: fit-content;
-  display: flex;
-  cursor: pointer;
-}
-.containerA {
-  /* border: 2px solid black; */
-  width: 330px;
-}
-.addBtn {
-  /* border: 1px solid black; */
-  display: flex;
-  border-radius: 30px;
-  /* text-align: center; */
-  width: 190px;
-  padding: 10px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 50px;
-  margin-top: 10px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  background-color: #f77d03;
-  color: whitesmoke;
-  transition: 300ms;
-}
-.addBtn:hover {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #e67505;
-  cursor: pointer;
-  color: wheat;
-}
-.containerB {
-  margin-top: 10px;
-}
-.containerB-1 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #66696e;
-  /* margin-bottom: 20px; */
-  padding-left: 10px;
-}
-th {
-  /* border: 1px solid black; */
-  text-align: left;
-  width: 300px;
+.title {
+  margin: 0 0 30px 10px;
+  font-weight: bold;
 }
 .containerB-2 {
-  /* border: 2px solid black; */
-  border-radius: 10px;
   font-family: "Source Sans Pro", sans-serif;
   margin-top: 20px;
   padding: 10px;
   color: #343a40;
   font-size: 14px;
 }
-td {
-  /* border: 1px solid black; */
-  width: 300px;
-}
 .containerB-2:hover {
-  background-color: #f1f3f4;
-  /* cursor: pointer; */
+  background-color: #cecece;
 }
 .icon-edit-delete {
-  color: white;
+  color: whitesmoke;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -145,38 +85,63 @@ td {
   color: #606060;
   cursor: pointer;
 }
-.modaladd {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .img-avatar {
   border-radius: 50%;
   margin-right: 20px;
 }
-.containerB-3 {
-  overflow-y: auto;
-}
-.contact-main-container-2 {
-  position: fixed;
-  margin-left: 1200px;
-  margin-top: 100px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: none;
-}
-.contact-main-container-2-show {
-  position: fixed;
-  margin-left: 1200px;
-  margin-top: 30px;
-  /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  /* display: none; */
-}
-
-.imageDetail {
+.avatar-img {
+  font-size: 20px;
+  font-weight: bold;
+  height: 48px;
+  width: 48px;
   border-radius: 50%;
-}
-.listgroup {
+  background-color: #90b5d8;
+  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.listgroup2 {
+.containerB {
+  margin-top: 10px;
+}
+.containerB-1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #66696e;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+}
+.image-detail {
+  border-radius: 20px;
+}
+.listgroup-2 {
   font-size: 12px;
+}
+.modal-add {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.table-age {
+  font-weight: bold;
+  text-align: center;
+}
+.table-action {
+  text-align: right;
+}
+.card-style {
+  border-radius: 20px !important;
+  padding: 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12) !important;
+  background-color: whitesmoke !important;
+}
+.card-color {
+  background-color: whitesmoke !important;
+}
+/* ===================================== */
+
+@media only screen and (max-width: 1400px) {
+  .page-2-content {
+    width: 100%;
+    margin: 0 1rem;
+  }
 }
