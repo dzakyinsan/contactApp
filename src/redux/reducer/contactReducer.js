@@ -1,4 +1,4 @@
-import { ADD_CONTACT_ERROR, ADD_CONTACT_SUCCESS, GET_CONTACT_SUCCESS, EDIT_CONTACT_ERROR, EDIT_CONTACT_SUCCESS } from "./../action/types";
+import { ADD_CONTACT_ERROR, ADD_CONTACT_SUCCESS, GET_CONTACT_SUCCESS } from "./../action/types";
 
 const INITIAL_STATE = {
   message: "",

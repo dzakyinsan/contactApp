@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1),
-      width: "20rem",
+      // width: "20rem",
       height: "46px",
       fontFamily: "Source Sans Pro",
     },
@@ -183,7 +183,7 @@ function Contact() {
       <div className="page-2-content">
         <h1 className="title">Contact App</h1>
         <Row>
-          <Col md="7">
+          <Col md="7" className="mt-2">
             <Card className="card-style">
               <Card.Body>
                 <Row>
@@ -223,7 +223,7 @@ function Contact() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="5">
+          <Col md="5" className="mt-2">
             {showCard ? (
               <Card className="card-style" style={{ position: "sticky", top: "0" }}>
                 <Card.Img className="image-detail" variant="top" src={detail.photo} />
